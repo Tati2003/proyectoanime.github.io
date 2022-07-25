@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="media/logo.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <title>Momento Anime</title>
+</head>
+<body>
+
+
+    <!--NavBar-->
+    
+    <nav>
+        <ul>
+            <li><img src="media/logo.jpg" alt="logo" class="logo"></li>
+            <li><a href="index.html" class="titulo">Momento <span>Anime</span></a></li>
+            <li class="nav-item"> <a href="index.html" class="nav-item">Inicio</a></li>
+            <li><a href="recomendaciones.html" class="nav-item">Recomendaciones</a></li>
+           
+            
+        </ul>
+    </nav>
+
+    <!--Fin de NavBar-->
+
+    <div class="anuncio"><p>¿Te gusta lo que ves? ¡Añadinos a favoritos y activa las notificaciones para enterarte de las últimas novedades!</p></div>
+
+    <!--primer Fondo-->
+    <div class="backgrounds fondo1">
+        
+        <!--Artículo-->
+
+<div  id="inicio" class="art-container">
+    <article class="first-article">
+        <section class="first-section" >
+            <div class="h2-animation"></div>
+            <h2 class="h2-fp">Vamos a hablar de <span>anime</span></h2>
+            
+            <p class="p-fp">En esta página nos dedicamos a contar los animes que vimos, cómo nos sentimos respecto a ellos y qué novedades se pueden esperar en un futuro.</p>
+        </section>
+
+        <!--Divisor de secciones-->
+
+        <section class="scnd-section">
+
+                     <!-- slider -->
+            <figure class="fig">
+
+                <div class="container" id="container">
+                    <div class="img-container">
+            
+                        <div><a href="recomendaciones.html">
+                        <img src="slide imgs/spyxfamil.jpg" id="img1" class="active img">
+                        <p id="txt1" class="text active">Spy x Family</p>
+                        </div>
+            
+                        <div>
+                        <img src="slide imgs/bnha.jpg" class="img"  id="img2">
+                        <p id="txt2" class="text">Boku no Hero Academy</p>
+                        </div>
+            
+                        <div>
+                            <img src="slide imgs/jjk.jpg" class="img" id="img3">
+                            <p id="txt3" class="text">Jujutsu Kaisen</p>
+                        </div>
+            
+                        <div>
+                            <img src="slide imgs/dbs.jpg" class="img" id="img4">
+                            <p id="txt4" class="text">Dragon Ball Súper</p>
+                        </div>
+            
+                        <div>
+                            <img src="slide imgs/Tr.jpg" class="img" id="img5">
+                            <p id="txt5" class="text">Tokyo Revengers</p>
+                        </div>
+            
+                        <div>
+                            <img src="slide imgs/shippuden.jpg" class="img" id="img6">
+                            <p id="txt6" class="text">Naruto Shippuden</p>
+                        </div>
+            
+                        <div>
+                            <img src="slide imgs/akame.jpg" class="img" id="img7">
+                            <p id="txt7" class="text">Akame ga Kill</p>
+                        </div>
+                        </a>
+                    </div>
+            
+                    <div class="dot-container">
+                        <button onclick="dot(1)"></button>
+                        <button onclick="dot(2)"></button>
+                        <button onclick="dot(3)"></button>
+                        <button onclick="dot(4)"></button>
+                        <button onclick="dot(5)"></button>
+                        <button onclick="dot(6)"></button>
+                        <button onclick="dot(7)"></button>
+                    </div>
+                    <button id="prev" class="arrow" onclick="prev()">&lt;</button>
+                    <button id="next" class="arrow" onclick="next()">&gt;</button>
+                </div>
+            
+                <script src="JS/slide.js"></script>
+                <!--fin slider-->
+
+                <figcaption>En estas fotos tenemos personajes de reconocidos animes que probablemente hayas escuchado mencionar</figcaption>
+
+            </figure>
+
+   
+        </section>
+    </article>
+
+        <!--Fin artículo-->
+</div>
+</div>
+<!--Fin primer fondo-->
+    <div class="anim-container one"><div class="toAnimate"></div><div class="toAnimate"></div><div class="toAnimate"></div></div>
+
+    <div class="backgrounds fondo2"></div>
+    <!--Fin segundo fondo-->
+
+    <div class="anim-container one"><div class="toAnimate"></div><div class="toAnimate"></div><div class="toAnimate"></div></div>
+
+    <div class="backgrounds fondo3"></div>
+    <!--Fin tercer fondo-->
+    
+    <div class="anim-container one"><div class="toAnimate"></div><div class="toAnimate"></div><div class="toAnimate"></div></div>
+
+    <div class="backgrounds fondo4"></div>
+    <!--Fin cuarto fondo-->
+
+   <a href="#inicio" id="upBtn"> &uarr;</a>
+
+    <footer>Seguínos en nuestras redes</footer>
+    <script src="main.js"></script>
+</body>
+</html>
