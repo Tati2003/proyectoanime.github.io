@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,137 +8,193 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="media/logo.ico">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2133f66787.js" crossorigin="anonymous"></script>
     <title>Momento Anime</title>
 </head>
+
 <body>
 
 
     <!--NavBar-->
-    
+
     <nav>
-        <ul>
-            <li><img src="media/logo.jpg" alt="logo" class="logo"></li>
-            <li><a href="index.html" class="titulo">Momento <span>Anime</span></a></li>
-            <li class="nav-item"> <a href="index.html" class="nav-item">Inicio</a></li>
-            <li><a href="recomendaciones.html" class="nav-item">Recomendaciones</a></li>
-           
-            
-        </ul>
+        <div class="pc-menu">
+            <ul>
+                <i class="fa fa-bars"></i>
+                <img src="media/logo.jpg" title="Momento Anime" alt="logo" class="logo">
+                <li><a href="index.html" class="titulo" tabindex="1">Momento <span>Anime</span></a></li>
+                <li><a href="index.html" class="nav-item" tabindex="2">Inicio</a></li>
+                <li class="nav-item" id="recomendacion" tabindex="3"> Recomendaciones
+                    <ul class="rec-menu">
+                        <li><a class="rec-item uno" href="recomendaciones.html/#quever">Qué anime puedo ver?</a></li>
+                        <li><a class="rec-item" href="recomendaciones.html/#dondever">Dónde puedo ver anime?</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="resp-menu">
+  
+                <ul>
+                    <i class="fa fa-bars"></i>
+                    <li><img src="media/logo.jpg" title="Momento Anime" alt="log" class="logo"></li>
+                    <li><a href="index.html" class="tituloresp" tabindex="1">Momento <span>Anime</span></a></li>
+                    <li><a href="index.html" class="resp-item" tabindex="2">Inicio</a></li>
+                    <li class="resp-item" id="resp-rec" tabindex="3"> Recomendaciones
+                        <ul class="resp-rec-menu">
+                            <li><a class="resp-rec-item uno" href="recomendaciones.html/#quever">Qué anime puedo ver?</a></li>
+                            <li><a class="resp-rec-item" href="recomendaciones.html/#dondever">Dónde puedo ver anime?</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+        </div> -->
+
+
+
     </nav>
 
     <!--Fin de NavBar-->
 
-    <div class="anuncio"><p>¿Te gusta lo que ves? ¡Añadinos a favoritos y activa las notificaciones para enterarte de las últimas novedades!</p></div>
+    <div class="anuncio">
+        <p>¿Te gusta lo que ves? ¡Añadinos a favoritos y activa las notificaciones para enterarte de las últimas
+            novedades!</p>
+    </div>
 
     <!--primer Fondo-->
-    <div class="backgrounds fondo1">
-        
+    <div class="backgrounds fondo1" alt="Background">
+
         <!--Artículo-->
 
-<div  id="inicio" class="art-container">
-    <article class="first-article">
-        <section class="first-section" >
-            <div class="h2-animation"></div>
-            <h2 class="h2-fp">Vamos a hablar de <span>anime</span></h2>
-            
-            <p class="p-fp">En esta página nos dedicamos a contar los animes que vimos, cómo nos sentimos respecto a ellos y qué novedades se pueden esperar en un futuro.</p>
-        </section>
+        <div id="inicio" class="art-container">
+            <article class="first-article">
+                <section class="first-section">
+                    <div class="h2-animation"></div>
+                    <h2 class="h2-fp">Vamos a hablar de <span>anime</span></h2>
 
-        <!--Divisor de secciones-->
+                    <p class="p-fp">En esta página nos dedicamos a contar los animes que vimos, cómo nos sentimos
+                        respecto a ellos y qué novedades se pueden esperar en un futuro.</p>
+                </section>
 
-        <section class="scnd-section">
+                <!--Divisor de secciones-->
 
-                     <!-- slider -->
-            <figure class="fig">
+                <section class="scnd-section">
 
-                <div class="container" id="container">
-                    <div class="img-container">
-            
-                        <div><a href="recomendaciones.html">
-                        <img src="slide imgs/spyxfamil.jpg" id="img1" class="active img">
-                        <p id="txt1" class="text active">Spy x Family</p>
+                    <!-- slider -->
+                    <figure class="fig">
+
+                        <div class="container" id="container">
+                            <div class="img-container">
+
+                                <div><a href="recomendaciones.html">
+                                        <img src="slide imgs/spyxfamil.jpg" title="Spy x Family" alt="Spy_x _Family.jpg"
+                                            id="img1" class="active img">
+                                        <p id="txt1" class="text active">Spy x Family</p>
+                                </div>
+
+                                <div>
+                                    <img src="slide imgs/bnha.jpg" title="Boku No Hero Academy "
+                                        alt="Boku_No_Hero_Academy.jpg" class="img" id="img2">
+                                    <p id="txt2" class="text">Boku no Hero Academy</p>
+                                </div>
+
+                                <div>
+                                    <img src="slide imgs/jjk.jpg" title="Jujutsu Kaisen" alt="Jujutsu_Kaisen.jpg"
+                                        class="img" id="img3">
+                                    <p id="txt3" class="text">Jujutsu Kaisen</p>
+                                </div>
+
+                                <div>
+                                    <img src="slide imgs/dbs.jpg" title="Dragon Ball Super" alt="Dragon_Ball_Super.jpg"
+                                        class="img" id="img4">
+                                    <p id="txt4" class="text">Dragon Ball Súper</p>
+                                </div>
+
+                                <div>
+                                    <img src="slide imgs/Tr.jpg" title="Tokyo Revengers" alt="Tokyo_Revengers.jpg"
+                                        class="img" id="img5">
+                                    <p id="txt5" class="text">Tokyo Revengers</p>
+                                </div>
+
+                                <div>
+                                    <img src="slide imgs/shippuden.jpg" title="Naruto Shippuden"
+                                        alt="Naruto_Shippuden.jpg" class="img" id="img6">
+                                    <p id="txt6" class="text">Naruto Shippuden</p>
+                                </div>
+
+                                <div>
+                                    <img src="slide imgs/akame.jpg" title="Akame ga Kill" alt="Akame_ga_Kill.jpg"
+                                        class="img" id="img7">
+                                    <p id="txt7" class="text">Akame ga Kill</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="dot-container">
+                                <button onclick="dot(1)"></button>
+                                <button onclick="dot(2)"></button>
+                                <button onclick="dot(3)"></button>
+                                <button onclick="dot(4)"></button>
+                                <button onclick="dot(5)"></button>
+                                <button onclick="dot(6)"></button>
+                                <button onclick="dot(7)"></button>
+                            </div>
+                            <button id="prev" class="arrow" onclick="prev()">&lt;</button>
+                            <button id="next" class="arrow" onclick="next()">&gt;</button>
                         </div>
-            
-                        <div>
-                        <img src="slide imgs/bnha.jpg" class="img"  id="img2">
-                        <p id="txt2" class="text">Boku no Hero Academy</p>
-                        </div>
-            
-                        <div>
-                            <img src="slide imgs/jjk.jpg" class="img" id="img3">
-                            <p id="txt3" class="text">Jujutsu Kaisen</p>
-                        </div>
-            
-                        <div>
-                            <img src="slide imgs/dbs.jpg" class="img" id="img4">
-                            <p id="txt4" class="text">Dragon Ball Súper</p>
-                        </div>
-            
-                        <div>
-                            <img src="slide imgs/Tr.jpg" class="img" id="img5">
-                            <p id="txt5" class="text">Tokyo Revengers</p>
-                        </div>
-            
-                        <div>
-                            <img src="slide imgs/shippuden.jpg" class="img" id="img6">
-                            <p id="txt6" class="text">Naruto Shippuden</p>
-                        </div>
-            
-                        <div>
-                            <img src="slide imgs/akame.jpg" class="img" id="img7">
-                            <p id="txt7" class="text">Akame ga Kill</p>
-                        </div>
-                        </a>
-                    </div>
-            
-                    <div class="dot-container">
-                        <button onclick="dot(1)"></button>
-                        <button onclick="dot(2)"></button>
-                        <button onclick="dot(3)"></button>
-                        <button onclick="dot(4)"></button>
-                        <button onclick="dot(5)"></button>
-                        <button onclick="dot(6)"></button>
-                        <button onclick="dot(7)"></button>
-                    </div>
-                    <button id="prev" class="arrow" onclick="prev()">&lt;</button>
-                    <button id="next" class="arrow" onclick="next()">&gt;</button>
-                </div>
-            
-                <script src="JS/slide.js"></script>
-                <!--fin slider-->
 
-                <figcaption>En estas fotos tenemos personajes de reconocidos animes que probablemente hayas escuchado mencionar</figcaption>
+                        <script src="JS/slide.js"></script>
+                        <!--fin slider-->
 
-            </figure>
+                        <figcaption>En estas fotos tenemos personajes de reconocidos animes que probablemente hayas
+                            escuchado mencionar</figcaption>
 
-   
-        </section>
-    </article>
+                    </figure>
 
-        <!--Fin artículo-->
-</div>
-</div>
-<!--Fin primer fondo-->
-    <div class="anim-container one"><div class="toAnimate"></div><div class="toAnimate"></div><div class="toAnimate"></div></div>
 
-    <div class="backgrounds fondo2"></div>
+                </section>
+            </article>
+
+            <!--Fin artículo-->
+        </div>
+    </div>
+    <!--Fin primer fondo-->
+    <div class="anim-container one">
+        <div class="toAnimate"></div>
+        <div class="toAnimate"></div>
+        <div class="toAnimate"></div>
+    </div>
+
+    <div class="backgrounds fondo2" alt="Background"></div>
     <!--Fin segundo fondo-->
 
-    <div class="anim-container one"><div class="toAnimate"></div><div class="toAnimate"></div><div class="toAnimate"></div></div>
+    <div class="anim-container one">
+        <div class="toAnimate"></div>
+        <div class="toAnimate"></div>
+        <div class="toAnimate"></div>
+    </div>
 
-    <div class="backgrounds fondo3"></div>
+    <div class="backgrounds fondo3" alt="Background"></div>
     <!--Fin tercer fondo-->
-    
-    <div class="anim-container one"><div class="toAnimate"></div><div class="toAnimate"></div><div class="toAnimate"></div></div>
 
-    <div class="backgrounds fondo4"></div>
+    <div class="anim-container one">
+        <div class="toAnimate"></div>
+        <div class="toAnimate"></div>
+        <div class="toAnimate"></div>
+    </div>
+
+    <div class="backgrounds fondo4" alt="Background"></div>
     <!--Fin cuarto fondo-->
 
-   <a href="#inicio" id="upBtn"> &uarr;</a>
+    <a href="#inicio" id="upBtn"> &uarr;</a>
 
-    <footer>Seguinos en nuestras redes</footer>
+    <footer>Seguinos en nuestras redes:<a href="https://www.instagram.com/" id="ig"> <i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/" id="ig"> <i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/" id="ig"><i class="fa fa-facebook"></i></a>
+    </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
