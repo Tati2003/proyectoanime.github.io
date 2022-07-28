@@ -246,9 +246,14 @@ a.titulo:hover {
 
 }
 
+
 /*  MENU RESPONSIVE*/
 .resp-menu {
     display: none;
+}
+.fa-bars {
+    display: none;
+    visibility:hidden;
 }
 
 .tituloresp {
@@ -616,9 +621,7 @@ a:visited {
 
 }
 
-.fa-bars {
-    display: none;
-}
+
 
 /* @media(max-width:842px){
     .momento{
