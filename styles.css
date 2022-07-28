@@ -382,7 +382,6 @@ figcaption {
     color: #fff;
     text-decoration: none;
     border: #fff solid .1rem;
-    /* display: none; */
 }
 
 #upBtn:hover {
@@ -623,11 +622,6 @@ a:visited {
 
 
 
-/* @media(max-width:842px){
-    .momento{
-        margin-right: 2rem;
-    }
-}  */
 @media(max-width:852px) {
 
     nav {
@@ -706,65 +700,3 @@ a:visited {
         font-size: 1rem;
     }
 }
-
-/* .pc-menu{
-        display: none;
-    }
-
-
-    .resp-menu{
-        display: block;
-        text-align: center;
-        padding-left: 12vw;
-        width: 100%;
-        background-color: #fff;
-    }
-
-    .tituloresp{
-        height: 5rem;
-        font-size: 1.8rem;
-        padding: 2rem;
-        margin-bottom: 5rem;
-    }
-    li > .resp-menu{
-        padding-top: 25rem;
-    } 
-    .resp-item{
-        padding: .5rem;
-        text-decoration: none;
-        color: #fff;
-        background-color: #00f;
-    }
-    .resp-menu > a{
-
-    }
-
-    #resp-rec{
-        margin-right: 2rem;
-    }
-
-    .resp-rec-item{
-        background-color: #f28;
-        color: #7af;
-        display: block;
-        width: 100%;
-        margin: 0;
-        text-decoration: none;
-    }
-
-
-
-    .text{
-        bottom: 7%;
-        font-size: 1rem;
-    }
-    .fa-bars{
-        display: block;
-        float: right;
-        margin-right: .5rem;
-        margin-top: 2%;
-        font-size: 2rem;
-    }
-    .fa-bars:active{
-        transform:rotate(90deg);
-    } */
