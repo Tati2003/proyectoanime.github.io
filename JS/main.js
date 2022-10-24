@@ -9,8 +9,9 @@ window.onload = () => {
     window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        behavior: ``
     })
+
 };
 
 
@@ -26,9 +27,11 @@ function showUpButton() {
 /*The upButton function */
 
 function goTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
 }
 
 /* It shows the menu if there is a mobile client */
