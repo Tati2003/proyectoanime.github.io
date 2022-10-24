@@ -698,7 +698,12 @@ a:visited {
         top: 25%;
         margin-bottom: 0;
         background-color: #fff;
-        width: 45%;
+        width: 85%;
+    }
+    .img-container {
+        position: relative;
+        width: 100%;
+  
     }
 
     figcaption {
@@ -711,10 +716,10 @@ a:visited {
     }
 
 }
-@media(min-width:1232px) {
+@media(max-width:1440px) {
     .container {
         background-color: #fff;
-        max-width: 30%;
+        width: 55%;
     }
 
     .img-container {
@@ -728,4 +733,24 @@ a:visited {
         left: 35rem;
         border-radius: 0;
     }
+}
+
+@media(min-width:2559px){
+    .container {
+        background-color: #fff;
+        width: 35%;
+    }
+
+    .img-container {
+        position: relative;
+        width: 100%;
+  
+    }
+    .rec-menu {
+        margin-top: 0;
+        width: 20%;
+        left: 30rem;
+        border-radius: 0;
+    }
+
 }
