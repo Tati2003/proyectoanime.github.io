@@ -28,6 +28,9 @@ nav {
     background: linear-gradient(#000, #555, #111);
 }
 
+i{
+    cursor: pointer;
+}
 
 .pc-menu>ul {
     list-style: none;
@@ -163,7 +166,7 @@ a.titulo:hover {
 }
 
 
-.anuncio {
+.annoucement {
     width: 100%;
     background-color: rgb(54, 117, 225);
     font-weight: bolder;
@@ -231,7 +234,23 @@ a.titulo:hover {
 }
 
 .fa-sort-up{
-   visibility: hidden;
+    color: #fff;
+    visibility:visible;
+    position: relative;
+    left: 14rem;
+    top: -1.2rem;
+}
+
+.nav-item:hover   .fa-sort-up {
+    color: #f28;
+    cursor: pointer;
+}
+
+#recomendacion:focus .fa-sort-up{
+    transform: rotate(180deg);
+    color: #f28;
+    left: 14rem;
+    top: -2rem;
 }
 /*Fin recomendados menú*/
 .logo {
@@ -317,8 +336,8 @@ a.titulo:hover {
 
 }
 
-.h2-fp {
-    color: rgb(255, 255, 255);
+h2 {
+    color: #fff;
     font-size: 2rem;
     padding: 1rem;
     padding-bottom: 0;
@@ -375,13 +394,22 @@ figcaption {
     height: 2rem;
     text-align: center;
     border-radius: 100%;
-    padding: 2rem 2rem 4rem;
+    padding: 2rem;
     font-size: 4rem;
     font-weight: bolder;
     background-color: #f28;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
     border: #fff solid .1rem;
+    display: none;
+
+}
+
+#upBtn::after{
+    content: "↑";
+    position: relative;
+    top: -80%;
 }
 
 #upBtn:hover {
@@ -664,26 +692,6 @@ a:visited {
         width: 100%;
         left: -1rem;
         border-radius: 0;
-    }
-
-    
-    .fa-sort-up{
-        color: #fff;
-        visibility:visible;
-        position: relative;
-        left: 14rem;
-        top: -1.2rem;
-    }
-    .nav-item:hover   .fa-sort-up {
-        color: #f28;
-        cursor: pointer;
-    }
-
-    #recomendacion:focus .fa-sort-up{
-        transform: rotate(180deg);
-        color: #f28;
-        left: 14rem;
-        top: -2rem;
     }
 
     .container {

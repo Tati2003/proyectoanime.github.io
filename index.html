@@ -24,12 +24,13 @@
             <ul>
                 <i class="fa fa-bars bckg" onclick="showMenu()"></i>
                 <img src="media/logo.jpg" title="Momento Anime" alt="logo" class="logo bckg">
-                <li class="momento bckg" ><a href="index.html" class="titulo" tabindex="1">Momento <span>Anime</span></a></li>
+                <li class="momento bckg"><a href="index.html" class="titulo" tabindex="1">Momento <span>Anime</span></a>
+                </li>
                 <li><a href="index.html" class="nav-item" tabindex="2">Inicio</a></li>
                 <li class="nav-item" id="recomendacion" tabindex="3"> Recomendaciones<i class="fa-solid fa-sort-up"></i>
                     <ul class="rec-menu">
-                        <li><a class="rec-item uno" href="recomendaciones.html/#quever">Qué anime puedo ver?</a></li>
-                        <li><a class="rec-item" href="recomendaciones.html/#dondever">Dónde puedo ver anime?</a></li>
+                        <li><a class="rec-item uno" href="#quever">Qué anime puedo ver?</a></li>
+                        <li><a class="rec-item" href="#dondever">Dónde puedo ver anime?</a></li>
                     </ul>
                 </li>
             </ul>
@@ -41,7 +42,7 @@
 
     <!--Fin de NavBar-->
 
-    <div class="anuncio">
+    <div class="annoucement">
         <p>¿Te gusta lo que ves? ¡Añadinos a favoritos y activa las notificaciones para enterarte de las últimas
             novedades!</p>
     </div>
@@ -71,7 +72,7 @@
                         <div class="container" id="container">
                             <div class="img-container">
 
-                                <div><a href="recomendaciones.html">
+                                <div><a href="#recomendaciones">
                                         <img src="slide imgs/spyxfamil.jpg" title="Spy x Family" alt="Spy_x _Family.jpg"
                                             id="img1" class="active img">
                                         <p id="txt1" class="text active">Spy x Family</p>
@@ -144,40 +145,50 @@
         </div>
     </div>
     <!--Fin primer fondo-->
-    <div class="anim-container one">
-        <div class="toAnimate"></div>
-        <div class="toAnimate"></div>
-        <div class="toAnimate"></div>
+    <div id="recomendaciones">
+
+
+        <div class="anim-container one">
+            <div class="toAnimate"></div>
+            <div class="toAnimate"></div>
+            <div class="toAnimate"></div>
+        </div>
+
+        <div class="backgrounds fondo2" alt="Background">
+            <div>
+                <h2>Recomendaciones</h2>
+            </div>
+        </div>
+        <!--Fin segundo fondo-->
+
+        <div class="anim-container one">
+            <div class="toAnimate"></div>
+            <div class="toAnimate"></div>
+            <div class="toAnimate"></div>
+        </div>
+
+        <div class="backgrounds fondo3" alt="Background" id="quever">
+
+            <h2></h2>
+        </div>
+        <!--Fin tercer fondo-->
+
+        <div class="anim-container one">
+            <div class="toAnimate"></div>
+            <div class="toAnimate"></div>
+            <div class="toAnimate"></div>
+        </div>
+
+        <div class="backgrounds fondo4" alt="Background"></div>
+        <!--Fin cuarto fondo-->
     </div>
-
-    <div class="backgrounds fondo2" alt="Background"></div>
-    <!--Fin segundo fondo-->
-
-    <div class="anim-container one">
-        <div class="toAnimate"></div>
-        <div class="toAnimate"></div>
-        <div class="toAnimate"></div>
-    </div>
-
-    <div class="backgrounds fondo3" alt="Background"></div>
-    <!--Fin tercer fondo-->
-
-    <div class="anim-container one">
-        <div class="toAnimate"></div>
-        <div class="toAnimate"></div>
-        <div class="toAnimate"></div>
-    </div>
-
-    <div class="backgrounds fondo4" alt="Background"></div>
-    <!--Fin cuarto fondo-->
-
-    <a href="#inicio" id="upBtn"> &uarr;</a>
+    <a onclick="goTop()" id="upBtn"></a>
 
     <footer>Seguinos en nuestras redes:<a href="https://www.instagram.com/" id="ig"> <i class="fa fa-instagram"></i></a>
         <a href="https://www.twitter.com/" id="ig"> <i class="fa fa-twitter"></i></a>
         <a href="https://www.facebook.com/" id="ig"><i class="fa fa-facebook"></i></a>
     </footer>
-    <script src="main.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
